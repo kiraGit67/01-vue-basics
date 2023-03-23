@@ -1,7 +1,7 @@
 Vue.createApp({
   data() {
     return {
-      activeTab: 2,
+      activeTab: 3,
     };
   },
 }).mount("#app");
