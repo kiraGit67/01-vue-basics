@@ -37,6 +37,8 @@
                     <section v-show="activeTab === 1" class="tab-box__content-item">Content 1</section>
                     <section v-show="activeTab === 2" class="tab-box__content-item">Content 2</section>
                     <section v-show="activeTab === 3" class="tab-box__content-item">Content 3</section>
+                    <section v-show="activeTab === 0 || activeTab > 3">Sorry, no Content available for your choice.
+                    </section>
                 </div>
             </div>
         </div>
