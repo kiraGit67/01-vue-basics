@@ -14,4 +14,15 @@ Vue.createApp({
       ],
     };
   },
+  methods: {
+    changeXYcoords(event) {
+      this.x = event.offsetX;
+      this.y = event.offsetY;
+    },
+    deleteFruitItem(key) {
+      this.fruitBasket = this.fruitBasket.filter((fruit) => {
+        return fruit !== key;
+      });
+    },
+  },
 }).mount("#app");
