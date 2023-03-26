@@ -19,9 +19,9 @@ Vue.createApp({
       this[xPropertyName] = event.offsetX;
       this[yPropertyName] = event.offsetY;
     },
-    deleteFruitItem(key) {
-      this.fruitBasket = this.fruitBasket.filter((fruit) => {
-        return fruit !== key;
+    deleteFruitItem(key, list) {
+      this[list] = this[list].filter((item) => {
+        return item !== key;
       });
     },
   },
